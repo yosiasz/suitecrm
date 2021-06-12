@@ -5,9 +5,11 @@ sudo ufw allow 'Apache'
 sudo systemctl enable apache2
 
 #download and extracy suitecrm
+sudo rm SuiteCRM-7.11.18.zip
 sudo wget https://suitecrm.com/files/162/SuiteCRM-7.11/525/SuiteCRM-7.11.18.zip
 sudo apt install unzip
-sudo mkdir -p /var/www/
+sudo unzip SuiteCRM-7.11.18.zip -d /var/www/
+
 sudo mv /var/www/SuiteCRM-7.11.18/ /var/www/suitecrm
 cd /var/www/suitecrm
 sudo chown -R www-data:www-data /var/www/suitecrm/
@@ -24,10 +26,14 @@ sudo a2dismod mpm_prefork
 sudo a2enmod mpm_event proxy_fcgi setenvif
 sudo systemctl restart apache2
 
+#mariadb
+sudo apt install mariadb-server
+
+#virtual host conf
+sudo rm suitecrm.conf
 sudo wget https://raw.githubusercontent.com/yosiasz/suitecrm/main/suitecrm.conf
 sudo rm /etc/apache2/sites-available/suitecrm.conf
 sudo mv suitecrm.conf /etc/apache2/sites-available/suitecrm.conf
-
 sudo a2ensite suitecrm.conf
 
 sudo systemctl reload apache2
