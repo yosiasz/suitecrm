@@ -8,9 +8,9 @@ sudo systemctl enable apache2
 sudo rm SuiteCRM-7.11.18.zip
 sudo wget https://suitecrm.com/files/162/SuiteCRM-7.11/548/SuiteCRM-7.11.20.zip
 sudo apt install unzip
-sudo unzip SuiteCRM-7.11.18.zip -d /var/www/
+sudo unzip SuiteCRM-7.11.20.zip -d /var/www/
 
-sudo mv /var/www/SuiteCRM-7.11.18/ /var/www/suitecrm
+sudo mv /var/www/SuiteCRM-7.11.20/ /var/www/suitecrm
 cd /var/www/suitecrm
 sudo chown -R www-data:www-data /var/www/suitecrm/
 sudo chmod -R 755 .
