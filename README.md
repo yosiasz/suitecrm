@@ -18,7 +18,8 @@ Suitecrm Automation
     * ./install_suitecrm.sh
 
   * Make sure to change the following in the suitecrm.conf file
-    ```<VirtualHost *:80>
-    ServerName your.server.ip.address```
+  
+    `<VirtualHost *:80>
+    ServerName your.server.ip.address`
 
 # Python Script
