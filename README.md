@@ -8,7 +8,8 @@ Suitecrm Automation
 
 # Bash Script
     After logging in to your Ubuntu server on root folder after 
-    wget https://github.com/yosiasz/suitecrm/blob/main/install_suitecrm.sh
+    wget https://raw.githubusercontent.com/yosiasz/suitecrm/main/install_suitecrm.sh
     chmod +x install_suitecrm.sh
     ./install_suitecrm.sh
+
 # Python Script

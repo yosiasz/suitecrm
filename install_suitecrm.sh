@@ -24,7 +24,8 @@ sudo a2dismod mpm_prefork
 sudo a2enmod mpm_event proxy_fcgi setenvif
 sudo systemctl restart apache2
 
-sudo wget https://github.com/yosiasz/suitecrm/suitecrm.conf
+sudo wget https://raw.githubusercontent.com/yosiasz/suitecrm/main/suitecrm.conf
+sudo rm /etc/apache2/sites-available/suitecrm.conf
 sudo mv suitecrm.conf /etc/apache2/sites-available/suitecrm.conf
 
 sudo a2ensite suitecrm.conf
