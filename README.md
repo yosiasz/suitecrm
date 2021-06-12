@@ -18,8 +18,14 @@ Suitecrm Automation
     * ./install_suitecrm.sh
 
   * Make sure to change the following in the suitecrm.conf file
-  
+
     `<VirtualHost *:80>
-    ServerName your.server.ip.address`
+    ServerName your.website.com`
+  * Make sure to create matching name in /etc/hosts
+  
+    `sudo nano /etc/hosts`
+    *  Then add the following if it does not exist
+
+       `server.ip.address    your.website.com`
 
 # Python Script
