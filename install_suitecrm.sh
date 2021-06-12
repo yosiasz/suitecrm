@@ -5,7 +5,7 @@ sudo ufw allow 'Apache'
 sudo systemctl enable apache2
 
 #download and extracy suitecrm
-sudo rm SuiteCRM-7.11.18.zip
+sudo rm SuiteCRM-7.11.20.zip
 sudo wget https://suitecrm.com/files/162/SuiteCRM-7.11/548/SuiteCRM-7.11.20.zip
 sudo apt install unzip
 sudo unzip SuiteCRM-7.11.20.zip -d /var/www/

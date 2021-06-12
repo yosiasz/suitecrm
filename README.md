@@ -1,10 +1,9 @@
 # suitecrm
 Suitecrm Automation 
+Written and tested on Ubuntu 21.04 and SuiteCRM 7.11.20
 
-# Ubuntu 21.04
-    Written and tested on Ubuntu 21.04 
-    Download and Install Ubuntu 21.04
-    ubuntu-21.04-live-server-amd64.iso
+# Ubuntu 21.04    
+    Download and Install Ubuntu 21.04    
 
 # Bash Script
   ### After logging in into your Ubuntu server on root folder
@@ -22,7 +21,7 @@ Suitecrm Automation
     `<VirtualHost *:80>
     ServerName your.website.com`
   * Make sure to create matching name in /etc/hosts
-  
+
     `sudo nano /etc/hosts`
     *  Then add the following if it does not exist
 
