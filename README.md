@@ -7,13 +7,18 @@ Suitecrm Automation
     ubuntu-21.04-live-server-amd64.iso
 
 # Bash Script
-    After logging in to your Ubuntu server on root folder after 
-    wget https://raw.githubusercontent.com/yosiasz/suitecrm/main/install_suitecrm.sh
-    chmod +x install_suitecrm.sh
-    ./install_suitecrm.sh
+  ### After logging in into your Ubuntu server on root folder
+  * Download script
+    * wget https://raw.githubusercontent.com/yosiasz/suitecrm/main/install_suitecrm.sh
+    
+  * Make it runnable
+    * chmod +x install_suitecrm.sh
+    
+  * Run Script  to get suitecrm installed. You will get prompted few times, just say Y if you approve installations
+    * ./install_suitecrm.sh
 
-Make sure to change the following in the suitecrm.conf file
-    <VirtualHost *:80>
-        ServerName your.server.ip.address    
+  * Make sure to change the following in the suitecrm.conf file
+    ```<VirtualHost *:80>
+    ServerName your.server.ip.address```
 
 # Python Script
